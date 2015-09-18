@@ -33,24 +33,24 @@ public class Car {
         return name;
     }
 
-    Driver getDriver() {
+    public Driver getDriver() {
         return driver;
     }
 
-    String getManufacturer() {
+    public String getManufacturer() {
         return manufacturer;
     }
 
-    int getFuelCapacity() {
+    public  int getFuelCapacity() {
         return fuelCapacity;
     }
 
 
-    void refuel(int miles) {
+    public void refuel(int miles) {
         fuelCapacity += miles;
     }
 
-    void drive(int miles) {
+    public void drive(int miles) {
         if (fuelCapacity >= miles) {
             fuelCapacity -= miles;
         } else {
@@ -59,7 +59,7 @@ public class Car {
         }
     }
 
-    void print() {
+    public void print() {
         //cout << name << " Manufacturer: " << manufacturer << " Driver: " << driver.getName() << " FuelCapacity: " << fuelCapacity << endl;
         System.out.println(name + " Manufacturer: "+manufacturer+ " Driver: "+driver.getName()+" FuelCapacity: "+fuelCapacity);
     }
