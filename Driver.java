@@ -38,6 +38,6 @@ public class Driver {
 
     public  void print()  {
         //cout << name << " Age: " << age << " Country: " << country << endl;
-        System.out.println(name+" Age: "+age+" Country: "+country);
+        System.out.println(name+" Age: " + age + " Country: " + country);
     }
 }
